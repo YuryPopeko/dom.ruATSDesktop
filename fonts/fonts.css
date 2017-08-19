@@ -1,0 +1,20 @@
+﻿@font-face {
+	font-family: 'Conv_FedraSansAltPro-MediumTF';
+	src: local('☺'), url('FedraSansAltPro-MediumTF.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_FedraSansAltPro-BookTF';
+	src: local('☺'), url('FedraSansAltPro-BookTF.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ALSRubl';
+	src: local('☺'), url('ALSRubl.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

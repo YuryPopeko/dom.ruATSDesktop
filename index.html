@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ДомRu_АТС</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.4 172">
+				<rect class="st0" width="56.7" height="56.7"/>
+				<path class="st1" d="M19.6,36.4c-1.4,0-2,1.3-2,2.5c0,1.2,0.6,2.6,2,2.6c1.4,0,2-1.3,2-2.6C21.6,37.7,21,36.4,19.6,36.4 M19.6,42.6
+					c-2.3,0-3.3-1.9-3.3-3.7c0-1.8,1-3.7,3.3-3.7c2.2,0,3.2,1.8,3.2,3.7C22.8,40.8,21.8,42.6,19.6,42.6z"/>
+				<path class="st1" d="M13.3,41.4v-5h-2.5v1.4c0,1.3-0.1,2.7-0.5,3.6H13.3z M9,41.4c0.5-0.9,0.6-2.1,0.6-3.6v-2.1
+					c0-0.3,0.3-0.4,0.6-0.4h3.8c0.3,0,0.6,0.1,0.6,0.4v5.7h0.7c0.3,0,0.5,0.1,0.5,0.4v2.5c0,0.3-0.2,0.4-0.6,0.4c-0.3,0-0.6-0.1-0.6-0.4
+					v-1.8H9v1.8c0,0.3-0.3,0.4-0.6,0.4c-0.3,0-0.6-0.1-0.6-0.4v-2.5c0-0.4,0.2-0.4,0.5-0.4H9z"/>
+				<path class="st1" d="M30.8,42.2c0,0.3-0.2,0.4-0.6,0.4c-0.3,0-0.6-0.1-0.6-0.4V38L28,41.4c-0.1,0.2-0.3,0.3-0.5,0.3
+					c-0.2,0-0.4-0.1-0.5-0.3L25.4,38v4.2c0,0.3-0.3,0.4-0.6,0.4c-0.3,0-0.6-0.1-0.6-0.4v-6.6c0-0.3,0.3-0.4,0.6-0.4
+					c0.2,0,0.4,0.1,0.5,0.3l2.1,4.5l2.2-4.5c0.1-0.2,0.3-0.3,0.5-0.3c0.3,0,0.6,0.1,0.6,0.4V42.2z"/>
+				<path class="st1" d="M34,42.6c-0.7,0-1.3-0.6-1.3-1.2c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3C35.2,42.1,34.7,42.6,34,42.6"/>
+				<path class="st1" d="M40.7,35.3c-0.6,0-1.3,0.4-1.7,1l0-0.3c0-0.5-0.4-0.7-1-0.7c-0.5,0-1,0.1-1,0.7l0,6c0,0.5,0.4,0.7,1,0.7
+					c0.5,0,1-0.1,1-0.7l0-4c0-0.6,0.7-0.9,1.2-0.9c0.4,0,0.6,0.1,0.8,0.1c0.6,0,0.9-0.5,0.9-0.9C42,35.6,41.4,35.3,40.7,35.3"/>
+				<path class="st1" d="M47.9,35.3c-0.5,0-1,0.1-1,0.7v4.3c-0.3,0.4-0.7,0.6-1.2,0.6c-0.8,0-1-0.5-1-1.1v-3.8c0-0.5-0.4-0.7-1-0.7
+					c-0.5,0-1,0.1-1,0.7v4c0,1.6,0.7,2.7,2.4,2.7c0.7,0,1.3-0.4,1.7-1V42c0,0.5,0.4,0.7,1,0.7c0.5,0,1-0.1,1-0.7v-6
+					C48.9,35.4,48.4,35.3,47.9,35.3"/>
+				<path class="st1" d="M34,15.7c-1,0-1.8,0.8-1.8,1.8c0,1,0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8C35.7,16.5,34.9,15.7,34,15.7"/>
+				<path class="st1" d="M37.9,27.9c0,0.4-0.3,0.7-0.6,0.8c-2.7,0.6-5.8,1-9,1c-3.1,0-6.2-0.3-9-1c-0.4-0.1-0.6-0.4-0.6-0.8V14.8
+					c0-0.4,0.3-0.7,0.6-0.8c2.7-0.6,5.8-1,9-1c3.1,0,6.2,0.3,9,1c0.4,0.1,0.6,0.4,0.6,0.8V27.9z M37.7,13c-2.8-0.7-6.1-1-9.3-1
+					c-3.2,0-6.5,0.3-9.3,1c-1,0.2-1.4,0.8-1.4,1.8V28c0,1,0.4,1.6,1.4,1.8c2.8,0.7,6.1,1,9.3,1c3.2,0,6.5-0.3,9.3-1
+					c1-0.2,1.4-0.8,1.4-1.8V14.8C39.1,13.8,38.7,13.2,37.7,13z"/>
+				<rect x="56.7" class="st2" width="56.7" height="56.7"/>
+				<path class="st3" d="M101.7,42.8c0.9,0,1.4-0.1,2-0.3l-0.3-1c-0.5,0.1-0.9,0.2-1.5,0.2c-1.4,0-2.4-0.8-2.4-2.3c0-1.6,1-2.3,2.2-2.3
+					c0.7,0,1,0.1,1.6,0.3l0.4-0.9c-0.4-0.2-1-0.4-2-0.4c-2.2,0-3.5,1.3-3.5,3.4C98.1,41.5,99.4,42.8,101.7,42.8 M92.9,42.7h4.3v-1h-3
+					v-1.8h2.6v-0.9h-2.6v-1.8H97v-1h-4V42.7z M85.5,42.7h1.3v-2.8h3.1v2.8h1.3v-6.5h-1.3v2.8h-3.1v-2.8h-1.3V42.7z M81.7,42.7
+					c1.9,0,2.5-1,2.5-1.9c0-1-0.8-1.4-1.2-1.5v0c0.4-0.2,0.9-0.6,0.9-1.6c0-0.9-0.7-1.6-2.2-1.6c-0.8,0-1.5,0.2-1.9,0.5l0.4,0.9
+					c0.4-0.1,0.8-0.3,1.4-0.3c0.7,0,1.1,0.3,1.1,0.9c0,0.6-0.4,0.9-1.1,0.9h-0.8v0.9h0.8c0.8,0,1.4,0.2,1.4,0.9c0,0.7-0.6,1-1.3,1
+					c-0.6,0-1.3-0.2-1.7-0.4l-0.4,1C80,42.5,80.7,42.7,81.7,42.7z M72.7,42.7h1.3l2.7-4l0.5-0.8l0,0.9v3.9h1.3v-6.5H77L74.5,40l-0.6,1
+					l0-0.9v-3.9h-1.3V42.7z M68.5,39.6c1,0,1.5,0.4,1.5,1.1c0,0.6-0.4,1.1-1.4,1.1h-0.8v-2.1H68.5z M66.5,42.7h2.1c1.8,0,2.7-0.7,2.7-2
+					c0-1.4-1-2.1-2.9-2.1h-0.7v-1.4h3v-1h-4.3V42.7z"/>
+			</svg>
+			<div class="contact">
+				<span class="number">8 800 333-90-00</span>
+				<br>
+				<span class="call-free">Звонок бесплатный</span>
+			</div>
+			<div class="info">
+				<h1>Получите максимум от входящих вызовов</h1>
+				<p>Облачная АТС Дом.ru Бизнес — это виртуальная телефония, <br>которая помогает бизнесу увеличить продажи и качество <br>обслуживания клиентов.</p>
+				<ul>
+					<li>Многоканальный номер</li>
+					<li>Расширенная аналитика по звонкам</li>
+					<li>Простая и быстрая интеграция с популярными CRM.</li>
+				</ul>
+				<form action="" method="post">
+					<input type="tel" name="phone" placeholder="+7(___)___-__-__" required>
+					<input type="submit" name="send" value="Подключить">
+				</form>
+				<div class="modal">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+						<g>
+							<g id="cross">
+								<g>
+									<polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397      306,341.411 576.521,611.397 612,575.997 341.459,306.011    "/>
+								</g>
+							</g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+					</svg>
+					<div class="wrapper">
+						<img src="images/success.png">
+						<span>Заявка успешно отправлена!</span>
+						<p class="description">Благодарим Вас за выбор нашей компании <br>Специалист Дом.ru Бизнес свяжется с Вами.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="part1">
+			<div class="wrapper">
+				<div class="pluss">
+					<div class="plus pig">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.9 113">
+							<g>
+								<path class="st0" d="M74.2,10.9c-3.3-0.5-6.7-0.8-10.4-0.8c-5.4,0-15.2,1-20.1,2.2C32.6,0.8,16.3,2.1,15.2,4.3
+									c-0.7,1.4,4.8,9.2,8.4,14.7c-5.9,5.1-10.9,13.1-13.4,20.1H1.3v19l9.3,4.3c3.5,9.7,10.9,18,20.5,23.7v15.5c0,0.5,0.2,1,0.6,1.4
+									c0.4,0.4,1.6,0.8,2.1,0.8h18.5V92.2c0,0,8.6,0,11.6,0c2.7,0,9.3,0,9.3,0v11.6h18.2c0.7,0,1.4-0.4,2-0.8c0.6-0.4,0.3-0.9,0.6-1.5
+									v-9.2c0,0,17.9-14.5,18.5-34.7c0.1-2-0.1-4.9,0-6.9C109.8,22.7,83.8,13.3,74.2,10.9"/>
+								<g id="money-pig">
+									<path class="st1" d="M73.8,10.9c-3.3-0.5-6.7-0.8-10.4-0.8c-5.4,0-15.2,1-20.1,2.2C32.3,0.8,16,2.1,14.9,4.3
+										c-0.7,1.4,4.8,9.2,8.4,14.7c-5.9,5.1-10.9,13.1-13.4,20.1H1v19l9.3,4.3c3.5,9.7,10.9,18,20.5,23.7v15.5c0,0.5,0.2,1,0.6,1.4
+										c0.4,0.4,1.6,0.8,2.1,0.8h18.5V92.2c0,0,8.6,0,11.6,0c2.7,0,9.3,0,9.3,0v11.6h18.2c0.7,0,1.4-0.4,2-0.8c0.6-0.4,0.3-0.9,0.6-1.5
+										v-9.2c0,0,17.9-14.5,18.5-34.7c0.1-2-0.1-4.9,0-6.9c12.3-1.3,18.9-11.5,9.3-13.9 M112,50.6c-0.7-9.1-3.8-17.1-9-23.6"/>
+									<ellipse class="st2" cx="32.1" cy="33" rx="4.7" ry="4.7"/>
+									<circle class="st3" cx="89.1" cy="17.7" r="16.7"/>
+								</g>
+								<text transform="matrix(1 0 0 1 80.1522 25.0776)" class="st4 st5 st6">a</text>
+								<line class="st1" x1="29.8" y1="98.7" x2="4.2" y2="98.7"/>
+								<line class="st1" x1="93.9" y1="98.7" x2="125.9" y2="98.7"/>
+								<line class="st1" x1="52.2" y1="98.7" x2="72.4" y2="98.7"/>
+								<line class="st1" x1="35.2" y1="112" x2="89.1" y2="112"/>
+							</g>
+						</svg>
+						<p class="description-resume">Снижение затрат на вызовы внутри сети</p>
+						<p class="description">Добавляйте сотрудников в Облачную АТС <br>и общайтесь с ними совершенно бесплатно.</p>
+					</div>
+					<div class="plus phone">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.8 115.1">
+							<g>
+								<path class="st0" d="M18.4,47.4V93c0,3,2.4,5.5,5.5,5.5h54.7L96.8,113V98.5h5.5c3,0,5.5-2.4,5.5-5.5V47.4c0-3-2.4-5.5-5.5-5.5H23.9
+									C20.9,42,18.4,44.4,18.4,47.4z"/>
+								<path class="st1" d="M93.2,83.9H16.6c-3,0-5.5-2.4-5.5-5.5V31c0-3,2.4-5.5,5.5-5.5h76.5c3,0,5.5,2.4,5.5,5.5v47.4
+									C98.6,81.4,96.2,83.9,93.2,83.9z"/>
+								<line class="st2" x1="27.9" y1="8.4" x2="27.7" y2="0"/>
+								<line class="st2" x1="17.8" y1="11.2" x2="13.4" y2="3.9"/>
+								<line class="st2" x1="10.3" y1="18.6" x2="3" y2="14.3"/>
+								<line class="st2" x1="38.1" y1="11.2" x2="42" y2="3.9"/>
+								<line class="st2" x1="45.5" y1="18.6" x2="52.4" y2="14.3"/>
+								<rect x="49.4" y="34.7" class="st1" width="32.8" height="10.9"/>
+								<path class="st3" d="M38.5,23.7c0-3-2.4-5.5-5.5-5.5h-9.1c-3,0-5.5,2.4-5.5,5.5v47.4c0,3,2.4,5.5,5.5,5.5H33c3,0,5.5-2.4,5.5-5.5
+									V23.7z"/>
+								<line class="st2" x1="51.2" y1="54.7" x2="58.5" y2="54.7"/>
+								<line class="st2" x1="62.2" y1="54.7" x2="69.5" y2="54.7"/>
+								<line class="st2" x1="73.1" y1="54.7" x2="80.4" y2="54.7"/>
+								<line class="st2" x1="51.2" y1="62" x2="58.5" y2="62"/>
+								<line class="st2" x1="62.2" y1="62" x2="69.5" y2="62"/>
+								<line class="st2" x1="73.1" y1="62" x2="80.4" y2="62"/>
+								<line class="st2" x1="51.2" y1="69.3" x2="58.5" y2="69.3"/>
+								<line class="st2" x1="62.2" y1="69.3" x2="69.5" y2="69.3"/>
+								<line class="st2" x1="73.1" y1="69.3" x2="80.4" y2="69.3"/>
+								<path class="st2" d="M27.6,76.6V93c0,3-2.4,5.5-5.5,5.5H7.5C4.5,98.5,2,96,2,93V71.1c0-3,2.4-5.5,5.5-5.5h3.6"/>
+							</g>
+						</svg>
+						<p class="description-resume">Интеграция существующих номеров</p>
+						<p class="description">Подключайте телефонный номер любого оператора <br>к Облачной АТС и совершайте звонки с привычного <br>номера без оплаты за переадресацию.</p>
+					</div>
+					<div class="plus certificate">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.6 107.9">
+							<g>
+								<path class="st0" d="M1,1v88.4h76.4V74.8c3.2,2.9,7.4,4.6,12.1,4.6s8.9-1.8,12.1-4.6v14.7h16.1V1H1z"/>
+								<circle class="st1" cx="89.4" cy="61.3" r="18.1"/>
+								<path class="st2" d="M89.4,79.4c-4.6,0-8.9-1.8-12.1-4.6v30.8l12.1-12.1l12.1,12.1V74.8C98.3,77.6,94.1,79.4,89.4,79.4z"/>
+								<g>
+									<g>
+										<line class="st3" x1="109.5" y1="41.2" x2="109.5" y2="40.2"/>
+										<line class="st4" x1="109.5" y1="35.6" x2="109.5" y2="12.3"/>
+										<polyline class="st3" points="109.5,10.1 109.5,9.1 108.5,9.1 			"/>
+										<line class="st5" x1="103.4" y1="9.1" x2="12.6" y2="9.1"/>
+										<polyline class="st3" points="10,9.1 9,9.1 9,10.1 			"/>
+										<line class="st6" x1="9" y1="15.2" x2="9" y2="77.8"/>
+										<polyline class="st3" points="9,80.4 9,81.4 10,81.4 			"/>
+										<line class="st7" x1="15.1" y1="81.4" x2="61.8" y2="81.4"/>
+										<line class="st3" x1="64.3" y1="81.4" x2="65.3" y2="81.4"/>
+									</g>
+								</g>
+								<line class="st0" x1="21.5" y1="29.1" x2="95.5" y2="29.1"/>
+								<line class="st0" x1="21.5" y1="39.2" x2="71.3" y2="39.2"/>
+								<line class="st0" x1="21.1" y1="51.3" x2="65.3" y2="51.3"/>
+								<line class="st0" x1="21.1" y1="65.3" x2="63.3" y2="65.3"/>
+							</g>
+						</svg>
+						<p class="description-resume">Качественная и надежная связь</p>
+						<p class="description">Общайтесь с клиентами без помех благодаря <br>приоритезации голосового трафика на сети Дом.ru <br>Бизнес (QoS).</p>
+					</div>
+				</div>
+				<div class="video-presentation">
+					<img class="video" src="images/video-preview.jpg">
+					<iframe src="https://www.youtube.com/embed/y6itOJEt6Vc?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<img class="play" src="images/play.png">
+					<p>Преимущества Облачной АТС за 2 минуты</p>
+				</div>
+			</div>
+		</div>
+		<div class="part2">
+			<input type="radio" name="sales" id="call-group" checked>
+			<input type="radio" name="sales" id="call-statistic">
+			<input type="radio" name="sales" id="talk-record">
+			<input type="radio" name="sales" id="voice-menu">
+			<div class="wrapper">
+				<h2>Эффективное управление продажами</h2>
+				<ul>
+					<li><label for="call-group">Группы обзвона</label></li>
+					<li><label for="call-statistic">Статистика вызовов</label></li>
+					<li><label for="talk-record">Запись разговора</label></li>
+					<li><label for="voice-menu">Голосовое меню</label></li>
+				</ul>
+			</div>
+			<div class="call-group">
+				<p>Управляйте распределением вызовов внутри отделов, выбирая <br>подходящий алгоритм — всем сотрудникам сразу, по нарастающей, <br>равномерно или по очереди в определенном порядке.</p>
+			</div>
+			<div class="call-statistic">
+				<p>Анализируйте звонки по периодам, направлениям вызовов и сотрудникам <br>с фильтрацией по дням, неделям и месяцам</p>
+			</div>
+			<div class="talk-record">
+				<p>Контролируйте телефонные продажи, улучшайте качество обслуживания <br>клиентов и  повышайте квалификацию ваших сотрудников</p>
+			</div>
+			<div class="voice-menu">
+				<p>Сокращайте время обслуживания ваших клиентов, <br>распределяя вызовы внутри компании <br>при помощи голосового меню</p>
+			</div>
+		</div>
+		<div class="part3">
+			<div class="wrapper">
+				<h2>Всегда на связи</h2>
+				<p>Создайте алгоритм распределения вызовов <br>в зависимости от времени суток, дней недели <br>или графика ваших сотрудников. </p>
+			</div>
+		</div>
+		<div class="part4">
+			<div class="wrapper">
+				<h2>Не теряйте клиентов</h2>
+				<ul>
+					<li>
+						<span class="list-item-title">Отдел продаж работает эффективнее.</span>
+						<div>
+							<span>Вся информация о пропущенных вызовах поступает на почту <br>или на мобильный телефон сотрудника.</span>
+						</div>
+					</li>
+					<li>
+						<span class="list-item-title">Ваш клиент никогда не услышит «занято».</span>
+						<div>
+							<span>Дозвон сразу до всех сотрудников.</span>
+						</div>
+					</li>
+					<li>
+						<span class="list-item-title">Музыка вместо гудков.</span>
+						<div>
+							<span>Вы можете настроить мелодию, которую будут слышать  <br>клиенты, ожидая ответа сотрудника.</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="part5">
+			<div class="wrapper">
+				<h2>Интеграция с CRM</h2>
+				<p>Телефония Дом.ru Бизнес интегрируется  <br>в популярные CRM-системы:</p>
+				<p>Также вы сможете подключить собственную CRM  <br>с помощью открытого REST API.</p>
+			</div>
+		</div>
+		<div class="part6">
+			<img src="images/box.png">
+			<div class="wrapper">
+				<h2>Пакет «Эффективные продажи»</h2>
+				<ul>
+					<li>
+						<span class="list-item-title">Обратный звонок (Callback) <br>из очереди</span> <br>
+						<span>Когда все ваши сотрудники заняты, <br>Облачная АТС предложит клиенту <br>заказать обратный звонок.</span>
+					</li>
+					<li>
+						<span class="list-item-title">SMS-извинения</span> <br>
+						<span>Если сотруднику не удалось ответить <br>на звонок, вы сможете извиниться <br>перед клиентом,  отправив <br>SMS-сообщение.</span>
+					</li>
+					<li>
+						<span class="list-item-title">SMS-визитка</span> <br>
+						<span>SMS-сообщение с контактными <br>данными сотрудника не позволит им <br>потеряться и напомнит о компании в <br>нужную минуту.</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="part7">
+			<div class="wrapper">
+				<table>
+					<tr>
+						<th>ТАРИФЫ</th>
+						<th>ЛАЙТ</th>
+						<th>БИЗНЕС</th>
+						<th>ПРО</th>
+					</tr>
+					<tr>
+						<td>Количество сотрудников</td>
+						<td>3</td>
+						<td>5</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>Возможность добавлять сотрудников</td>
+						<td class="no"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>Стоимость дополнительного профиля сотрудника</td>
+						<td class="no"></td>
+						<td>120 <span class="rubl">a</span>./мес</td>
+						<td>130 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr>
+						<td>Внешний многоканальный номер</td>
+						<td class="yes"></td>
+						<td>150 <span class="rubl">a</span>./мес</td>
+						<td>150 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr>
+						<td>Ручной перехват, удержание и перевод вызовов</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Условная переадресация вызовов
+							<div class="help">
+								<div class="tooltip">
+									Дает возможность выбора разных схем <br>приема звонков в зависимости от <br>времени суток, дня недели, а также <br>графика работы сотрудников.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Детализация вызовов
+							<div class="help">
+								<div class="tooltip">
+									Позволяет посмотреть историю вызовов, отсортировав их по направлениям (входящие, исходящие, пропущенные), по инициатору или клиенту.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Голосовая почта
+							<div class="help">
+								<div class="tooltip">
+									Дает возможность отправки голосовых сообщений позвонившего абонента на электронную почту сотрудников, заведенных в Облачной АТС, или любой внешний адрес электронной почты.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Виртуальный факс
+							<div class="help">
+								<div class="tooltip">
+									Данная функция позволяет отправлять и принимать факсы даже без наличия аппаратного факса.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Конференц-комнаты
+							<div class="help">
+								<div class="tooltip">
+									Позволяют собрать в одном звонке несколько своих коллег и клиентов для коллективного обсуждения различных вопросов.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Голосовое приветствие
+							<div class="help">
+								<div class="tooltip">
+									Короткое приветственное сообщение, которое клиент услышит вместо гудков. В зависимости от установленной схемы приема звонков, помимо стандартного приветствия, клиент может настроить голосовое уведомление о нерабочем времени.
+								</div>
+							</div>
+						</td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Голосовое меню
+							<div class="help">
+								<div class="tooltip">
+									Позволяет дозвониться в определенный отдел или сотруднику, одним нажатием кнопки телефона в тоновом режиме.
+								</div>
+							</div>
+						</td>
+						<td class="no"></td>
+						<td class="yes"></td>
+						<td class="yes"></td>
+					</tr>
+					<tr>
+						<td>
+							Группы обзвона
+							<div class="help">
+								<div class="tooltip">
+									Дают возможность объединить нескольких сотрудников в группу приема вызовов, назначить на эту группу внутренний номер, задать правило приема и распределения вызовов внутри группы.
+								</div>
+							</div>
+						</td>
+						<td class="no"></td>
+						<td>2</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>
+							Запись разговоров
+							<div class="help">
+								<div class="tooltip">
+									Безлимитная запись всех направлений разговоров и их годовое хранение.
+								</div>
+							</div>
+						</td>
+						<td class="no"></td>
+						<td>1000 <span class="rubl">a</span>./мес</td>
+						<td>1000 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr>
+						<td>
+							Пакет «Эффективные продажи»
+						</td>
+						<td class="no"></td>
+						<td>600 <span class="rubl">a</span>./мес</td>
+						<td>600 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr>
+						<td>
+							Модуль расширенной статистики
+							<div class="help">
+								<div class="tooltip">
+									Обеспечивает графическое отображение статистики по звонкам в компании, а также строит рейтинг сотрудников в зависимости от качества их работы по телефону.
+								</div>
+							</div>
+						</td>
+						<td class="no"></td>
+						<td>500 <span class="rubl">a</span>./мес</td>
+						<td>300 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr>
+						<td>
+							Интеграция с CRM
+							<div class="help">
+								<div class="tooltip">
+									Обеспечивает интеграцию Облачной АТС и сторонних CRM-программ, установленных у клиента.
+								</div>
+							</div>
+						</td>
+						<td class="no"></td>
+						<td>500 <span class="rubl">a</span>./мес</td>
+						<td>300 <span class="rubl">a</span>./мес</td>
+					</tr>
+					<tr class="total">
+						<td></td>
+						<td>
+							от <span class="price">1500</span> <span class="rubl">a</span>./мес
+							<button class="connect">Подключить</button>
+							<div class="modal">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+									<g>
+										<g id="cross">
+											<g>
+												<polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397      306,341.411 576.521,611.397 612,575.997 341.459,306.011    "/>
+											</g>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+								<div class="wrapper">
+									<span>Заявка на подключение</span>
+									<p class="description">Отправьте заявку, и мы свяжемся с вами <br>в ближайшее время.</p>
+									<form action="" method="post">
+										<label for="phone">Контактный телефон:</label>
+										<input type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__" required>
+										<label for="send">Нажимая кнопку, вы соглашаетесь на обработку <a href="https://domru.ru/policy.pdf">персональных данных</a></label>
+										<input type="submit" name="send" id="send" value="Отправить заявку">
+									</form>
+								</div>
+							</div>
+						</td>
+						<td>
+							от <span class="price">2300</span> <span class="rubl">a</span>./мес
+							<button class="connect">Подключить</button>
+							<div class="modal">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+									<g>
+										<g id="cross">
+											<g>
+												<polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397      306,341.411 576.521,611.397 612,575.997 341.459,306.011    "/>
+											</g>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+								<div class="wrapper">
+									<span>Заявка на подключение</span>
+									<p class="description">Отправьте заявку, и мы свяжемся с вами <br>в ближайшее время.</p>
+									<form action="" method="post">
+										<label for="phone">Контактный телефон:</label>
+										<input type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__" required>
+										<label for="send">Нажимая кнопку, вы соглашаетесь на обработку <a href="https://domru.ru/policy.pdf">персональных данных</a></label>
+										<input type="submit" name="send" id="send" value="Отправить заявку">
+									</form>
+								</div>
+							</div>
+						</td>
+						<td>
+							от <span class="price">3250</span> <span class="rubl">a</span>./мес
+							<button class="connect">Подключить</button>
+							<div class="modal">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+									<g>
+										<g id="cross">
+											<g>
+												<polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397      306,341.411 576.521,611.397 612,575.997 341.459,306.011    "/>
+											</g>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+								<div class="wrapper">
+									<span>Заявка на подключение</span>
+									<p class="description">Отправьте заявку, и мы свяжемся с вами <br>в ближайшее время.</p>
+									<form action="" method="post">
+										<label for="phone">Контактный телефон:</label>
+										<input type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__" required>
+										<label for="send">Нажимая кнопку, вы соглашаетесь на обработку <a href="https://domru.ru/policy.pdf">персональных данных</a></label>
+										<input type="submit" name="send" id="send" value="Отправить заявку">
+									</form>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="business">
+			<div class="wrapper">
+				<h2>Бренд Дом.ru Бизнес</h2>
+				<p>Дом.ru Бизнес — бренд компании «ЭР-Телеком Холдинг» <br>для оказания услуг связи корпоративным клиентам. <br>В Санкт-Петербурге Дом.ru Бизнес работает с 2012 года.</p>
+			</div>
+		</div>
+		<div class="down">
+			<div class="wrapper">
+				<p>Присоединяйтесь к числу наших любимых клинетов</p>
+				<div class="clients">
+					<input type="radio" name="clients" id="slide1">
+					<input type="radio" name="clients" id="slide2" checked>
+					<ul class="slides">
+						<li class="slide">
+				    		<div><img src="images/clients7.png"></div>
+				    		<div><img src="images/clients8.png"></div>
+					      	<div><img src="images/clients9.png"></div>
+					      	<div><img src="images/clients10.png"></div>
+					      	<div><img src="images/clients11.png"></div>
+				    	</li>        
+					    <li class="slide">
+							<div><img src="images/clients1.gif"></div>
+							<div><img src="images/clients2.gif"></div>
+							<div><img src="images/clients3.gif"></div>
+							<div><img src="images/clients4.gif"></div>
+							<div><img src="images/clients5.gif"></div>
+							<div><img src="images/clients6.gif"></div>
+					    </li>
+					</ul>
+					<div class="navigation">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+					</div>
+				</div>
+				<hr>
+				<span class="address">© АО «ЭР-Телеком Холдинг» 2011—2017. <br>Фактический адрес: БЦ «Петровский Форт», Финляндский пр., д. 4A, Санкт-Петербург.</span>
+				<div class="contact">
+					<span class="number">8 800 333-90-00</span>
+					<br>
+					<span class="call-free">Звонок бесплатный</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

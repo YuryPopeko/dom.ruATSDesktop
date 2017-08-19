@@ -1,0 +1,735 @@
+body {
+	margin: 0px;
+}
+
+.wrapper {
+	width: 73%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background: #e5e4e9 url("images/call-wooman.png") no-repeat 100% 100%;
+	background-size: 45%;
+}
+
+header .wrapper {
+	padding-top: 20px;
+}
+
+header .wrapper .logo {
+	width: 7.25vw;
+	height: 11vw;
+}
+
+header .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E31E24;}
+header .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FEFEFE;}
+header .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFDD00;}
+header .st3{fill:#2B2A29;}
+
+.contact {
+	float: right;
+}
+
+header .contact .number {
+	font: 0.93vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+}
+
+.contact .call-free {
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+}
+
+h1 {
+	font: 1.7vw/2.18vw "Conv_FedraSansAltPro-MediumTF";
+	margin-top: 0;
+}
+
+header .info p {
+	margin: 2.2% 0;
+	font: 0.93vw/1.45vw "Conv_FedraSansAltPro-BookTF";
+}
+
+header .info ul {
+	padding: 0;
+	margin: 0;
+	list-style: none; 
+	font: 0.93vw/1.45vw "Conv_FedraSansAltPro-BookTF";
+}
+
+header .info ul li::before,
+.part4 li::before {
+	content: "■";
+	font-size: 0.83vw;
+	color: #ffdd00;
+	margin-right: 0.5vw;
+}
+
+header form {
+	padding: 4% 0 8% 0;
+}
+
+form input[type="tel"] {
+	width: 22vw;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 0.84vw 0.42vw;
+	font: 1.04vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	outline: none;
+}
+
+form input[type="submit"],
+.connect {
+	width: 11vw;
+	border: none;
+	border-bottom: 3px solid #fea900;
+	border-radius: 2px;
+	background-color: #ffdd00;
+	padding: 0.89vw 0.47vw 0.73vw 0.47vw;
+	font: 1.04vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	color: #333333;
+	cursor: pointer;
+	outline: none;
+}
+
+.modal {
+	width: 100vw;
+	height: 100vw;
+	z-index: 1;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.modal svg {
+	position: absolute;
+	fill: #bbbbbb;
+	width: 2vw;
+	height: 2vw;
+	top: 1.5vw;
+	left: 96vw;
+	cursor: pointer;
+	transition: fill .2s
+}
+
+.modal svg:hover {
+	fill: #000;
+}
+
+.modal .wrapper {
+	width: 25.32vw;
+	text-align: center;
+	padding-top: 18vw;
+	color: #333;
+}
+
+.modal img {
+	width: 11.93vw;
+	height: 11.93vw;
+}
+
+.modal span {
+	display: block;
+	font: 1.45vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	margin: 1.04vw 0 0.8vw 0;
+}
+
+.modal .description {
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	margin: 0 0 3.13vw 0;
+}
+
+.modal label[for="phone"] {
+	display: block;
+	text-align: left;
+	margin: 0 0 0.42vw 0;
+}
+
+.modal input[type="tel"] {
+	display: block;
+	width: 100%;
+}
+
+.modal label[for="send"] {
+	display: block;
+	text-align: left;
+	font: 0.72vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	margin: 0.53vw 0 2vw 0;
+}
+
+.modal label a {
+	color: #1a81d8;
+}
+
+main {
+	width: 100%;
+}
+
+.part1 {
+	width: 100%;
+	background-color: #f5f6f8;
+}
+
+.pluss {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.plus {
+	display: inline-block;
+	height: 12.5vw;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 6vw;
+}
+
+.plus svg {
+	width: 5.4vw;
+	height: 5vw;
+}
+
+.pig .st0{fill:#CCE4FB;}
+.pig .st1{fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.pig .st2{fill:#F5F6F8;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.pig .st3{fill:#FFDD00;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.pig .st4{fill:#333333;}
+.pig .st5{font-family:'ALSRubl';}
+.pig .st6{font-size:23.4402px;}
+
+.phone .st0{fill:#CCE4FB;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.phone .st1{fill:#FFFFFF;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.phone .st2{fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.phone .st3{fill:#FFDD00;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+
+.certificate .st0{fill:#FFFFFF;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.certificate .st1{fill:#FFDD00;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.certificate .st2{fill:#CCE3FA;stroke:#333333;stroke-width:2;stroke-miterlimit:10;}
+.certificate .st3{fill:none;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+.certificate .st4{fill:none;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:1.8275,4.5688;}
+.certificate .st5{fill:none;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.0517,5.1292;}
+.certificate .st6{fill:none;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.069,5.1725;}
+.certificate .st7{fill:none;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.01,5.0249;}
+
+.plus .description-resume {
+	font: 1.04vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+}
+
+.plus .description {
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+}
+
+.video-presentation {
+	width: 35.9vw;
+	height: 29.7vw;
+	margin: 5.3vw auto 0 auto;
+	position: relative;
+}
+
+.video-presentation .video {
+	width: 100%;
+	position: absolute;
+}
+
+.video-presentation iframe {
+	width: 100%;
+	height: 21.85vw;
+}
+
+.video-presentation .play {
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	left: 15.4vw;
+	top: 8.4vw;
+	cursor: pointer;
+}
+
+.video-presentation p {
+	font: 1.04vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	text-align: center;
+	margin: 1.2vw 0 0 0;
+}
+
+.part2 {
+	width: 100%;
+	background-color: #ecf0f2;
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.part2 h2 {
+	font: 1.66vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	text-align: center;
+	margin: 0;
+	padding: 5vw 0 3.4vw 0;
+}
+
+.part2 input {
+	display: none;
+}
+
+.part2 ul {
+	width: 48.22vw;
+	margin: 0 auto;
+	padding: 0;
+	border: 2px solid #ffdd00;
+	border-radius: 2vw;
+	display: flex;
+	justify-content: space-around;
+}
+
+.part2 li {
+	width: 100%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.part2 li label {
+	width: 100%;
+	display: inline-block;
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	padding: 0.45vw 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.part2 ul li:first-child {
+	border-right: 1px solid #ffdd00;
+}
+
+.part2 ul li:last-child {
+	border-left: 1px solid #ffdd00;
+}
+
+.part2 ul li:first-child,
+.part2 ul li:first-child label {
+	border-top-left-radius: 2vw;
+	border-bottom-left-radius: 2vw;
+}
+
+.part2 ul li:last-child,
+.part2 ul li:last-child label {
+	border-top-right-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+}
+
+.part2 ul li:nth-child(n+2):nth-child(-n+3) {
+	border-right: 1px solid #ffdd00;
+	border-left: 1px solid #ffdd00;
+}
+
+#call-group:checked ~ .wrapper ul li:first-child,
+#call-statistic:checked ~ .wrapper ul li:nth-child(2),
+#talk-record:checked ~ .wrapper ul li:nth-child(3),
+#voice-menu:checked ~ .wrapper ul li:last-child {
+	background-color: #ffdd00;
+}
+
+.part2 p {
+	font: 0.93vw/1.35vw "Conv_FedraSansAltPro-BookTF";
+	text-align: center;
+	margin: 2.35vw 0 0 0;
+}
+
+.call-group,
+.call-statistic,
+.talk-record,
+.voice-menu {
+	height: 44vw;
+	display: none;
+}
+
+#call-group:checked ~ .call-group,
+#call-statistic:checked ~ .call-statistic,
+#talk-record:checked ~ .talk-record,
+#voice-menu:checked ~ .voice-menu {
+	display: block;
+}
+
+.call-group {
+	background: url("images/iPad1.png") no-repeat 66% -2%;
+	background-size: 77.5vw;
+}
+
+.call-statistic {
+	background: url("images/iPad2.png") no-repeat 56.8% -203%;
+	background-size: 74.05vw;
+}
+
+.talk-record {
+	background: url("images/iPad3.png") no-repeat 34% -204%;
+	background-size: 73.65vw;
+}
+
+.voice-menu {
+	background: url("images/iPad4.png") no-repeat 50% 100%;
+	background-size: 57vw;
+}
+
+.part3 {
+	width: 100%;
+	height: 46.1vw;
+	background-color: #f5f6f8;
+	background: url("images/iPad5.png") no-repeat 100% 100%;
+	background-size: 74.3vw;
+}
+
+.part3 h2 {
+	font: 1.97vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	margin: 0;
+	padding: 17.2vw 0 0 0;
+}
+
+.part3 p {
+	font: 0.93vw/1.35vw "Conv_FedraSansAltPro-BookTF";
+	margin: 1.2vw 0 0 0;
+}
+
+.part4 {
+	width: 100%;
+	height: 40.06vw;
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	background: #ecf0f2 url("images/worker.png") no-repeat 90% 100%;
+	background-size: 40%;
+}
+
+
+.part4 h2 {
+	font: 1.66vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	margin: 0;
+	padding: 11.9vw 0 0 0;
+}
+
+.part4 ul {
+	padding: 0;
+	list-style: none;
+}
+
+.part4 li {
+	font: 0.93vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	margin-top: 1.6vw;
+}
+
+.part4 li .list-item-title {
+	font-family: "Conv_FedraSansAltPro-MediumTF";
+}
+
+.part4 li div {
+	padding-left: 1.5vw;
+}
+
+.part5 {
+	width: 100%;
+	height: 40.53vw;
+	background: #f5f6f8 url("images/crm.png") no-repeat 50% 0%;
+	background-size: 48.4vw;
+}
+
+.part5 h2 {
+	font: 1.66vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	margin: 0;
+	padding: 6.1vw 0 0 0;
+	text-align: center;
+}
+
+.part5 p {
+	font: 0.93vw/1.35vw "Conv_FedraSansAltPro-BookTF";
+	text-align: center;
+}
+
+.part5 p:first-of-type {
+	margin: 0.85vw 0 0 0;
+}
+
+.part5 p:last-of-type {
+	margin: 21.1vw 0 0 0;
+}
+
+.part6 {
+	width: 100%;
+	height: 23.5vw;
+	background-color: #fff;
+	position: relative;
+}
+
+.part6 img {
+	width: 17.25vw;
+	position: absolute;
+	top: 7.8vw;
+	left: 7.1vw;
+}
+
+.part6 h2 {
+	font: 1.66vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+	margin: 0;
+	padding: 6.45vw 0 2vw 15.15vw ;
+}
+
+.part6 ul {
+	padding: 0 0 0 17.22vw;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.part6 li {
+	display: inline-block;
+	position: relative;
+}
+
+.part6 li::before {
+	content: "";
+	width: 1.67vw;
+	height: 1.67vw;
+	display: block;
+	position: absolute;
+	left: -2vw;
+	background: url("images/check.gif") no-repeat;
+	background-size: 100% 100%;
+}
+
+.part6 li .list-item-title {
+	font: 1.04vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+}
+
+.part6 li span:last-child {
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	display: inline-block;
+	margin-top: 0.8vw;
+}
+
+.part7 {
+	width: 100%;
+	height: 60vw;
+	background-color: #f5f6f8;
+}
+
+.part7 table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.part7 table tr:first-child th {
+	padding: 3.05vw 0 0 0;
+	border-bottom: 0.21vw solid #ffdd00;
+}
+
+.part7 table th:nth-child(1) {
+	width: 32%;
+}
+
+.part7 table th:nth-child(2) {
+	width: 23%;
+}
+
+.part7 table th:nth-child(3) {
+	width: 20.5%;
+}
+
+.part7 th {
+	text-align: left;
+	font: 0.93vw/1.35vw "Conv_FedraSansAltPro-MediumTF";
+}
+
+.part7 td {
+	border-bottom: 0.1vw solid #f0f0f0;
+	padding: 0.62vw 0;
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	position: relative;
+}
+
+.rubl {
+	font-family: "ALSRubl";
+}
+
+.part7 .yes::before {
+	content: "●";
+	color: #72b760;
+}
+
+.part7 .no::before {
+	content: "●";
+	color: #babbbd;
+}
+
+.part7 .total td {
+	font: 0.83vw/1.35vw "Conv_FedraSansAltPro-MediumTF";
+	border: none;
+}
+
+.part7 .help {
+	display: inline-block;
+	width: 1.04vw;
+	height: 1.04vw;
+	background: url("images/help.gif");
+	background-size: 100% 100%;
+	position: relative;
+	top: 0.2vw;
+	left: 0.4vw;
+	cursor: pointer;
+}
+
+td .tooltip {
+	display: none;
+	position: absolute;
+	bottom: 1vw;
+	left: 1vw;
+	width: 16.69vw;
+	background-color: #fff;
+	border: 3px solid #ffdd00;
+	padding: 0.9vw;
+	z-index: 1;
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+	box-shadow: 0 0 1.5vw 0.01vw rgba(78, 97, 103, 0.65);
+}
+
+.part7 .help:hover .tooltip {
+	display: block;
+}
+
+.part7 .total .price {
+	font: 1.86vw/1.35vw "Conv_FedraSansAltPro-MediumTF";
+}
+
+.part7 .connect {
+	font-size: 0.83vw;
+	margin-top: 1.6vw;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 2.6vw;
+	padding: 0;
+}
+
+.business {
+	width: 100%;
+	height: 33.65vw;
+	background: #fff url("images/desktop.png") no-repeat 50% 100%;
+	background-size: 73%;
+	border-top: 1px solid #e9e9e9; 
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.business h2 {
+	font: 1.97vw/1.35vw "Conv_FedraSansAltPro-BookTF";
+	text-align: center;
+	margin: 0;
+	padding-top: 3.65vw;
+}
+
+.business p {
+	font: 0.93vw/1.35vw "Conv_FedraSansAltPro-BookTF";
+	text-align: center;
+	margin: 1.55vw 0 0 0;
+}
+
+.down {
+	width: 100%;
+	height: 19.12vw;
+	background-color: #f5f6f8;
+}
+
+.down p {
+	font: 1.24vw/2.54vw "Conv_FedraSansAltPro-BookTF";
+	margin: 0;
+	padding: 2.6vw 0 0 0;
+	text-align: center;
+}
+
+.clients {
+	width: 100%;
+	height: 9vw;
+	overflow: hidden;
+}
+
+.clients .slides {
+	width: 200%;
+	padding: 0;
+	margin: 2vw 0;
+	list-style: none;
+	position: relative;
+	transition: left .4s ease-out;
+}
+
+.clients .slides li {
+	width: 50%;
+	position: relative;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients .slides li div {
+	width: 11%;
+}
+
+.clients .slides li img {
+	width: 100%;
+}
+
+.clients .navigation {
+	margin: 0 auto;
+	width: 2vw;
+}
+
+.clients input {
+	display: none;
+}
+
+.clients .navigation label {
+	display: inline-block;
+	width: 0.52vw;
+	height: 0.52vw;
+	border-radius: 50%;
+	background-color: #e5e5e5;
+}
+
+.clients .navigation label:first-child {
+	margin: 0 0.27vw 0 0;
+}
+
+.clients .navigation label:last-child {
+	margin: 0 0 0 0.27vw;
+}
+
+#slide1:checked ~ .slides {
+	left: 0;
+}
+#slide2:checked ~ .slides {
+	left: -100%;
+}
+
+.clients .navigation label:hover {
+ 	cursor: pointer;
+}
+
+.clients #slide1:checked ~ .navigation label[for="slide1"],
+.clients #slide2:checked ~ .navigation label[for="slide2"] {
+	background: #ffdd00;
+}
+
+.down hr {
+	border: none;
+	background-color: #e9e9e9;
+	height: 0.06vw;
+}
+
+.address {
+	display: inline-block;
+	padding: 0.4vw 0 0 0;
+	font: 0.83vw/1.24vw "Conv_FedraSansAltPro-BookTF";
+}
+
+.down .contact {
+	padding: 0.4vw 0 0 0;
+}
+
+.down .contact .number {
+	font: 1.35vw/1.24vw "Conv_FedraSansAltPro-MediumTF";
+}
